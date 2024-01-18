@@ -3,16 +3,15 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.00
 // @description  Keep the dashboard header at the top and move the buttons to the right.
-// @author       You
-// @match        https://creanlutheran.instructure.com
-// @match        https://creanlutheran.instructure.com/?login_success=1
+// @author       Laggy
+// @match        https://*.instructure.com
+// @match        https://*.instructure.com/?login_success=1
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-
-    // Bypass CSS block with random fetching
+    
     const cssbypass = function() {
         return Math.random();
     }
